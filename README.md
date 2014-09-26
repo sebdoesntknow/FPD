@@ -5,3 +5,5 @@ structure for your Flask projects. Made in Python 3.4
 
 It's yours! do whatever you please with it.
 
+Usage: ./fpd.py project_app_name_here
+
