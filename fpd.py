@@ -1,7 +1,7 @@
 #!/bin/env python
-# Directory structure maker for Flask projects.
-# Do whatever you want with this.
-# - seb
+# Create the basic directory structure for
+# your Flask based projects.
+
 import os, sys
 
 # Few core directories
