@@ -9,9 +9,10 @@ app_dirs = (
     'app/templates',
     'app/static',
     'app/main',
+    'api',
     'migrations',
     'tests',
-    'venv',
+    'venv'
 )
 # Main config files for the project
 app_files = (
@@ -36,8 +37,8 @@ def struct_app(app_name):
 
     # Now create files
     for f in app_files:
-        new_file = open(os.path.abspath('%s/%s' % (app_name, f)), 'w')
-        new_file.close()
+        with open(os.path.abspath('%s/%s' % (app_name, f)), 'w') as new_file:
+            print('Created: %s/%s' % (app_name, f))
 
 try:
     script, app_name = sys.argv
